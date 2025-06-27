@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <span>Ordering & Tracking</span>
+  <span class="spacer"></span>
+  <!--
+  <button mat-button (click)="navigateToHome()">Home</button>
+  <button mat-button (click)="navigateToOrdering()">Orders</button>
+  <button mat-button (click)="navigateToLogin()">Login</button>
+  -->
+  <!-- Only show user info and logout when NOT on login page -->
+  <button mat-button *ngIf="!isLoginPage">Sam Ford</button>
+  <button mat-icon-button (click)="navigateToLogin()" *ngIf="!isLoginPage">
+    <mat-icon>logout</mat-icon>
+  </button>
+  <span *ngIf="!isLoginPage">SF</span>
+</mat-toolbar>
+
+<div class="pharmacy-info">
+  Pharmacy: CAN | Columbus, OH
+</div>
+
+<router-outlet></router-outlet>

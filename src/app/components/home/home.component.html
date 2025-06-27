@@ -1,0 +1,63 @@
+<div class="main-container">
+  <!-- Main Content Area -->
+  <div class="content-area">
+    <div class="task-dashboard">
+      <h3>My Tasks</h3>
+      <p>Alerts/Notifications</p>
+      <p>ETAs</p>
+      <p>Errors</p>
+      
+      <div *ngIf="tasks.length > 0" class="tasks-section">
+        <h4>Current Tasks:</h4>
+        <ul>
+          <li *ngFor="let task of tasks">
+            {{ task.type }}: {{ task.description }} 
+            <span [class]="'priority-' + task.priority">({{ task.priority }})</span>
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="notifications.length > 0" class="notifications-section">
+        <h4>Recent Notifications:</h4>
+        <ul>
+          <li *ngFor="let notification of notifications">
+            <span [class]="'notification-' + notification.type">{{ notification.message }}</span>
+            <small>({{ notification.timestamp | date:'short' }})</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="navigation-cards">
+      <mat-card class="navigation-card" (click)="navigateToSection('patient-enrollment')">
+        <mat-card-content>
+          <h3>Patient Enrollment & Verification</h3>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="navigation-card" (click)="navigateToSection('ordering')">
+        <mat-card-content>
+          <h3>Ordering</h3>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="navigation-card" (click)="navigateToSection('other')">
+        <mat-card-content>
+          <h3>Other</h3>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="banner-area">
+    <div class="banner-item">Banner</div>
+    <div class="banner-item">Banner2</div>
+    <div class="banner-item">Banner3</div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    Footer Content
+  </div>
+</footer>
