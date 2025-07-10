@@ -39,7 +39,7 @@ export class LoginComponent {
       // Basic demo authentication - in real app, this would be an API call
       const { username, password } = this.loginForm.value;
       if (username && password) {
-        this.router.navigate(['/home']);
+        this.router.navigate(['smp/home']);
       }
     }
   }

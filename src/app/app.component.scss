@@ -1,3 +1,4 @@
+@use 'mixins' as *;
 .spacer {
   flex: 1 1 auto;
 }
@@ -13,4 +14,19 @@ mat-toolbar {
   font-size: 14px;
   color: #666;
   border-bottom: 1px solid #e0e0e0;
+}
+
+
+:host {
+  font-family: var(--font-family);
+}
+.header {
+  @include header-style;
+  .logo { height: 100%; }
+}
+h1 {
+  color: var(--color-primary);
+}
+button {
+  border-radius: var(--button-radius);
 }

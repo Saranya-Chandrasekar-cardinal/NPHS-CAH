@@ -4,6 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 // Import mock data from data folder
 import { MOCK_TASKS, MOCK_NOTIFICATIONS, Task, Notification } from '../../data/mock-data';
@@ -16,12 +17,18 @@ import { MOCK_TASKS, MOCK_NOTIFICATIONS, Task, Notification } from '../../data/m
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
+  brand: string = '';
   tasks: Task[] = [];
   notifications: Notification[] = [];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,private route: ActivatedRoute) {}
 
   ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      this.brand = params.get('brand') || 'smp';
+      console.log('Brand:', this.brand);
+    });
+
     // Load data from mock data files
     this.tasks = MOCK_TASKS;
     this.notifications = MOCK_NOTIFICATIONS;

@@ -1,12 +1,17 @@
-<mat-toolbar color="primary">
+<div class="app-container">
+  <header class="header">
+    <img class="logo" [src]="'assets/themes/' + brand + '/logo.png'" alt="Logo" />
+  </header>
+  <main>
+    <h1>Welcome to {{ brand | uppercase }}</h1>
+    <!-- <button mat-raised-button color="primary">Primary Button</button> -->
+  </main>
+</div>
+
+
+<!-- <mat-toolbar color="primary">
   <span>Ordering & Tracking</span>
   <span class="spacer"></span>
-  <!--
-  <button mat-button (click)="navigateToHome()">Home</button>
-  <button mat-button (click)="navigateToOrdering()">Orders</button>
-  <button mat-button (click)="navigateToLogin()">Login</button>
-  -->
-  <!-- Only show user info and logout when NOT on login page -->
   <button mat-button *ngIf="!isLoginPage">Sam Ford</button>
   <button mat-icon-button (click)="navigateToLogin()" *ngIf="!isLoginPage">
     <mat-icon>logout</mat-icon>
@@ -16,6 +21,6 @@
 
 <div class="pharmacy-info">
   Pharmacy: CAN | Columbus, OH
-</div>
+</div> -->
 
 <router-outlet></router-outlet>

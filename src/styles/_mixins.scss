@@ -1,0 +1,15 @@
+@mixin section-spacing {
+  padding: var(--layout-padding);
+  margin-bottom: var(--card-spacing);
+}
+
+@mixin grid-spacing {
+  display: grid;
+  gap: var(--card-spacing);
+}
+
+@mixin header-style {
+  height: var(--header-height);
+  padding: 0 var(--layout-padding);
+  background-color: var(--color-accent);
+}

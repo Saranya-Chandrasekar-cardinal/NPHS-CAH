@@ -11,7 +11,7 @@ export const routes: Routes = [
     loadComponent: () => import('./components/login/login.component').then(m => m.LoginComponent)
   },
   {
-    path: 'home',
+    path: ':brand/home',
     loadComponent: () => import('./components/home/home.component').then(m => m.HomeComponent)
   },
   {

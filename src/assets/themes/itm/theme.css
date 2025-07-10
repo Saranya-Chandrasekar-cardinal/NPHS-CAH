@@ -1,0 +1,22 @@
+:root {
+  --font-size-base: 16px;
+  --border-radius: 8px;
+}
+
+:root {
+  --color-primary: #8e24aa;
+  --color-accent: #FFFFFF;
+  --color-footer: #004B93;
+  --font-family: "Roboto", sans-serif;
+  --logo-url: url("/src/assets/themes/itm/logo.png");
+  --layout-header-height: 72px;
+  --button-radius: 12px;
+  /* Layout */
+  --layout-padding: 16px;
+  --layout-margin: 12px;
+  --card-spacing: 12px;
+  --header-height: 72px;
+  --button-radius: 12px;
+}
+
+/*# sourceMappingURL=theme.css.map */

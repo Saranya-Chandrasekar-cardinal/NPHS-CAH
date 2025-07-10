@@ -1,0 +1,22 @@
+:root {
+  --font-size-base: 16px;
+  --border-radius: 8px;
+}
+
+:root {
+  --color-primary: #1e88e5;
+  --color-accent: #c62828;
+  --color-footer: #27251F;
+  --font-family: "Lato", sans-serif;
+  --logo-url: url("/src/assets/themes/smp/logo.png");
+  --layout-header-height: 64px;
+  --button-radius: 6px;
+  /* Layout */
+  --layout-padding: 0 0 24px;
+  --layout-margin: 16px;
+  --card-spacing: 20px;
+  --header-height: 64px;
+  --button-radius: 6px;
+}
+
+/*# sourceMappingURL=theme.css.map */
