@@ -1,0 +1,42 @@
+<header [ngClass]="{'itm': brand== 'itm'}">
+    <mat-toolbar><!--color="primary"-->
+        <mat-toolbar-row class="desktop-header-bar">
+
+
+            <span class="brand-logo-wrapper">
+                <img class="logo-img" [src]="'assets/themes/' + brand + '/logo.png'" alt="Brand Logo" />
+                <span class="brand-name">SMP</span>
+                <span class="page-title">{{title | titlecase}}</span>
+            </span>
+
+            <span class="spacer"></span>
+            
+            <span class="pharmacy-info" alt="Pharmacy info">
+                <span class="label">Pharmacy:</span>
+                <span class="data">CAH | Columbus, OH</span>
+            </span>
+            <span class="line"></span>
+            <!-- Only show user info and logout when NOT on login page  *ngIf="!isLoginPage"-->
+            <span class="username-div" alt="user name info">
+                <span class="username">Sam Ford</span>
+                <span class="circle-btn"> SF</span>
+            </span>
+            <span class="line"></span>
+            <button mat-icon-button (click)="navigateToLogin()" alt="logout button">
+                <mat-icon>logout</mat-icon>
+            </button>
+            <span class="logout-text">Logout</span>
+        </mat-toolbar-row>
+        <mat-toolbar-row class="mobile-header-bar">
+            <span class="brand-logo-wrapper">
+                <img class="logo-img" [src]="'assets/themes/' + brand + '/mobile-logo.png'" alt="Brand Logo" />
+                 <span class="brand-name">{{brand == 'itm' ? '[SMP]' : 'SMP'}}</span>
+                <span class="page-title">{{title}}</span>
+            </span>
+            <span class="spacer"></span>
+            <button mat-icon-button aria-label="menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</header>

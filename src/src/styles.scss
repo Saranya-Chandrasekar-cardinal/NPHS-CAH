@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use 'styles/breakpoints' as breakpoints;
+@use 'styles/spacing' as spacing;
+@use 'styles/fonts' as fonts;
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content-area {
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+

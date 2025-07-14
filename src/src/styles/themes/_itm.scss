@@ -1,0 +1,26 @@
+@use './common';
+
+:root {
+
+
+  /* Text & Background */
+  --color-text: #27251f; // Cardinal Black
+  --color-background: #ffffff; // White
+  --color-surface: #efefef; // Warm Gray 1
+  --color-border: #004B93;
+  --color-footer: #004B93;
+  --color-smp: #3F71AB;
+
+
+  /* Fonts and Logo */
+  --font-family: 'Open Sans', sans-serif !important;
+  --logo-url: url('/src/assets/themes/itm/logo.png');
+
+
+  /* Layout */
+  --layout-padding: 16px;
+  --layout-margin: 12px;
+  --card-spacing: 12px;
+  --header-height: 72px;
+  --button-radius: 12px;
+}

@@ -1,0 +1,30 @@
+@use "breakpoints" as breakpoints;
+@use "fonts" as fonts;
+@use "cah-colors" as color;
+.sidebar {
+  width: 218px;
+  background-color: color.$Gray-10;
+  border-right: 1px solid color.$silver-color;
+  height: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  @include fonts.font-style('Open Sans', 14px, 400, color.$black-color, 100%, 0%);
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid color.$Gray-40;
+
+  
+  &.active {
+    border-left: 5px solid color.$brand-blue-4;
+  }
+}
+
+
+

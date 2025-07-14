@@ -1,0 +1,21 @@
+@use "breakpoints" as breakpoints;
+@use "fonts";
+@use "cah-colors" as color;
+
+ h2 {
+    margin-bottom: 15px;
+    color: color.$dark-gray;
+  }
+
+  p {
+    color: color.$gray40-color;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+.description {
+    @include fonts.font-style("Open Sans", 14px, 400, color.$black-color, 100%, 0%);
+}
+.header {
+    @include fonts.font-style("Open Sans", 16px, 600, color.$black-color, 100%, 0%);
+    margin-bottom: 8px;
+}

@@ -1,0 +1,39 @@
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+// Define a flex container mixin
+@mixin flex-container($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Use the mixin to create flex classes
+.flex-row {
+    @include flex-container(row);
+}
+
+.flex-column {
+    @include flex-container(column);
+}
+
+.flex-center {
+    @include flex-container(row, center, center);
+}

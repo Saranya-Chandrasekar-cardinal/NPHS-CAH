@@ -1,0 +1,38 @@
+@use './common';
+
+
+:root {
+  /* Core Brand Colors */
+  --color-primary: #3f7d98; // Primary brand color (interactive)
+  --color-secondary: #005c78; // Secondary brand color (links)
+  --color-accent: #e41f35; // Accent color (e.g., buttons, highlights)
+
+  /* Text & Background */
+  --color-text: #27251f; // Cardinal Black
+  --color-background: #ffffff; // White
+  --color-surface: #efefef; // Warm Gray 1
+  --color-border: #E42035;
+  --color-footer: #000000;
+  --color-smp: #ED1C25;
+
+  /* States */
+  --color-hover: #12445b;
+  --color-disabled: #b3cbd6;
+  --color-visited: #660099;
+
+
+  /* Misc Utility */
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --color-muted: #e1e1e1;
+
+  /* Fonts and Logo */
+  --font-family: 'Open Sans', sans-serif !important;
+  --logo-url: url('/src/assets/themes/smp/logo.png');
+
+  /* Layout */
+  --layout-padding: 0 0 24px;
+  --layout-margin: 16px;
+  --card-spacing: 20px;
+  --header-height: 64px;
+  --button-radius: 6px;
+}

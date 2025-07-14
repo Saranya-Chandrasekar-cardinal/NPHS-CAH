@@ -1,0 +1,52 @@
+@use "breakpoints" as breakpoints;
+@use "fonts";
+@use "cah-colors" as color;
+
+.navigation-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.navigation-card {
+    height: 150px;
+    transition: transform 0.2s ease-in-out;
+    flex: 1;
+
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid color.$charcoal-gray;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    @include breakpoints.respond-to(sm) {
+        max-width: 118px;
+        height: 121px;
+    }
+    @include breakpoints.respond-to(lg) {
+        min-width: 200px;
+    }
+    @include breakpoints.respond-to(md) {
+        min-width: 200px;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    mat-card-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        .navigation-name {
+            @include fonts.font-style("Open Sans", 14px, 400, color.$black-color, 100%, 0%);
+            text-align: center;
+            vertical-align: middle;
+            color: color.$black-color;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@use "breakpoints" as breakpoints;
+@use "fonts";
+@use "cah-colors" as color;
+
+.main-container {
+  display: flex;
+  min-height: calc(100vh - 104px);
+  flex-direction: row;
+  @include breakpoints.respond-to(md) {
+        min-width: 1024px;
+    }
+}
+
+.content-area {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-area {
+  width: 180px;
+  padding: 10px 20px;
+  background-color: color.$Gray-10;
+  border-left: 1px solid color.$white-silver-color;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoints.respond-to(sm) {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: color.$black-color;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-top: 0;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include fonts.font-style("Open Sans", 14px, 400, color.$Gray-50, 18px, 0px);
+  }
+
+  @include breakpoints.respond-to(sm) {
+    @include fonts.font-style("Open Sans", 12px, 600, color.$white-color, 18px, 0px);
+  }
+  @include breakpoints.respond-to(md) {
+    @include fonts.font-style("Open Sans", 14px, 600, color.$white-color, 18px, 0px);
+  }
+}

@@ -1,0 +1,17 @@
+@use "breakpoints" as breakpoints;
+@use "fonts";
+@use "cah-colors" as color;
+.banner-item {
+    background-color: color.$white-color;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid color.$dusty-gray-color;
+    min-height: 100px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include fonts.font-style("Open Sans", 14px, 400, color.$black-color, 100%, 0%);
+    vertical-align: middle;
+  }

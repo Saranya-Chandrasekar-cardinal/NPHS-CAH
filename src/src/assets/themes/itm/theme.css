@@ -1,0 +1,59 @@
+:root {
+  --font-size-base: 16px;
+  --font-size: 28px;
+  --border-radius: 8px;
+  /* header colors */
+  --color-black: #000000;
+  --color-header-circle: #BBDDE6;
+  --color-header-address: #0073FF;
+  --color-header-name: #27251F;
+  /* Grays */
+  --color-gray-100: #f7f7f7;
+  --color-gray-90: #efefef;
+  --color-gray-80: #e2e1e1;
+  --color-gray-70: #d3d2d3;
+  --color-gray-60: #c3c3c3;
+  --color-gray-50: #acabaa;
+  --color-gray-40: #888888;
+  --color-gray-30: #706c6c;
+  --color-gray-20: #58595b;
+  --color-gray-10: #404041;
+  /* Status Colors */
+  --color-error: #c61c2d;
+  --color-error-bg: #fce3e5;
+  --color-warning: #e09a00;
+  --color-warning-bg: #ffedc4;
+  --color-success: #3b6d25;
+  --color-success-bg: #e2f0d7;
+  --color-info: #3f7d98;
+  --color-info-bg: #e6f5f7;
+  /* Accent Colors for Illustrations */
+  --color-accent-blue: #80b8db;
+  --color-accent-green: #99deb8;
+  --color-accent-yellow: #ffd98a;
+  --color-accent-orange: #fab07d;
+  --color-accent-purple: #c4bddb;
+  --color-accent-pink: #de9cc7;
+  --color-accent-teal: #90d3d9;
+}
+
+:root {
+  /* Text & Background */
+  --color-text: #27251f;
+  --color-background: #ffffff;
+  --color-surface: #efefef;
+  --color-border: #004B93;
+  --color-footer: #004B93;
+  --color-smp: #3F71AB;
+  /* Fonts and Logo */
+  --font-family: "Open Sans", sans-serif !important;
+  --logo-url: url("/src/assets/themes/itm/logo.png");
+  /* Layout */
+  --layout-padding: 16px;
+  --layout-margin: 12px;
+  --card-spacing: 12px;
+  --header-height: 72px;
+  --button-radius: 12px;
+}
+
+/*# sourceMappingURL=theme.css.map */

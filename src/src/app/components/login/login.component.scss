@@ -1,0 +1,91 @@
+// Component-specific styles - layout handled by PageLayoutComponent
+@use "breakpoints" as breakpoints;
+@use "fonts";
+@use "cah-colors" as color;
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form mat-form-field {
+  width: 100%;
+}
+
+
+.login-container {
+  display: block;
+ 
+}
+
+.login-card {
+  width: 350px;
+  max-width: 90%;
+}
+
+.login-form-wrapper {
+  width: 300px;
+  max-width: 90%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+// Page content styling
+h2 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-bottom: 15px;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+}
+.header {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.login-container {
+  @include breakpoints.respond-to(sm) {
+    .header {
+      font-family: Inter;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+    .description {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+  }
+ 
+}

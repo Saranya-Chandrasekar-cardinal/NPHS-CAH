@@ -1,0 +1,7 @@
+<div class="navigation-cards">
+<mat-card *ngFor="let card of list" class="navigation-card" (click)="navigateToSection(card.url)">
+    <mat-card-content>
+        <div class="navigation-name">{{card.name}}</div>
+    </mat-card-content>
+</mat-card>
+</div>
